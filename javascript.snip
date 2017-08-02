@@ -9,15 +9,12 @@ options head
   }
 
 snippet afunc
-abbr    function
-alias shit
 options word
   function ${1:#:function_name}(${2:#:argument}) {
     ${0:TARGET}
   }
 
 snippet func
-abbr    po
 options head
   function ${1:function_name}(${2:argument}) {
     ${0:TARGET}
@@ -28,7 +25,6 @@ options head
   ${1:#:class_name}.prototype.${2:#:method_name} = function(${3:#:first_argument}) {
     ${0:TARGET}
   }
-
 
 snippet f
 options word
@@ -93,15 +89,10 @@ options head
     ${4}
   }
 
-
 snippet ;,
 abbr key-value
 options word
   ${1:#:value_name}: ${0:#:value},
-
-#snippet key
-#options word
-#  ${1:#:key}: "${2:#:value}"}${3:, }
 
 snippet setTimeout-function
 options head
